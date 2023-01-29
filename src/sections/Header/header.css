@@ -59,7 +59,7 @@
 }
 
 
-/* cta buttons (not includding socials) */
+/* cta buttons (not including socials) */
 .header__cta {
     display: flex;
     align-items: center;
@@ -69,33 +69,17 @@
 /* buttons */
 .header__cta a {
     min-width: 145px;
-}
-#dark .header__cta a {
-    box-shadow: 0px 2px 2px var(--color-white)
-}
-#light .header__cta a {
-    box-shadow: 0px 2px 2px var(--color-black);
+    text-align: center;
+    /* align-items: center; */
 }
 
 .header__cta a:hover {
-    min-width: 140px;
+    min-width: 145px;
 }
-#dark .header__cta a:hover {
-    /* background: var(--color-white);
-    color: var(--color-primary);
-    border-color: var(--color-primary-hover); */
-    box-shadow: 0px 2px 2px var(--color-primary-hover);
-}
-#light .header__cta a:hover {
-    /* background: var(--color-primary-hover);
-    color: var(--color-black);
-    border-color: var(--color-black); */
-    box-shadow: 0px 2px 2px var(--color-dark);
-}
-
 
 /* bio portion */
-.header__bio {
+/* moved to text-with-header-div in index.css */
+/* .header__bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,21 +89,7 @@
     text-align: center;
     gap: 0.5rem;
     padding: 0.5rem;
-}
-#dark .header__bio{
-    color: var(--color-white);
-    background-color: var(--color-primary-hover);
-    border: 3px solid var(--color-white);
-}
-#light .header__bio{
-    color: var(--color-black);
-    background-color: var(--color-light-bg2);
-    border: 3px solid var(--color-black);
-}
-
-
-
-
+} */
 
 /* socials */
 .header__socials {
@@ -151,7 +121,7 @@
     background: var(--color-light-bg2);
     color: var(--color-black);
     /* light mode */
-    border: 2px solid var(--color-black);
+    border: 3px solid var(--color-black);
     box-shadow: -2px 2px 2px var(--color-black);  
 }
 

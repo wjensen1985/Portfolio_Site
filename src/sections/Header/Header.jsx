@@ -16,7 +16,7 @@ const Header = () => {
             <img src={HeaderImage} alt="Header" />
           </div>
 
-          <div className="header__bio">
+          <div className="header__bio text-with-header-div">
             <h3>William Jensen</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur itaque magnam optio, aliquam numquam molestiae repellendus nam nulla? Consequuntur, sit fugiat. Architecto neque nulla id sapiente nihil, aspernatur adipisci provident.</p>
           </div>

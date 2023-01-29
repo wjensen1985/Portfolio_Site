@@ -138,35 +138,15 @@ nav {
     border: 2px solid var(--color-dark);
 }
 
-/* dark mode button portion */
-#theme__icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin: auto;
-    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
-    border-radius: var(--border-radius-1);
-    transition: var(--transition);
-    border: 2px solid transparent;
-}
-#dark #theme__icon {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-#light #theme__icon {
-    background: var(--color-light-bg2);
-    color: var(--color-black);
+.btn__holder{
+    display: flex;
+    gap: 3.5rem;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-#dark #theme__icon:hover {
-    background: var(--color-primary-hover);
-    border-color: var(--color-white);
-}
-#light #theme__icon:hover {
-    background: var(--color-primary-hover);
-    border-color: var(--color-black);
-}
-
+/* dark/light themes changed to be held within nav__icon-btn class in index.css */
 
 /* hide this nav menu on tablets and phones */
 @media screen and (max-width: 1024px) {

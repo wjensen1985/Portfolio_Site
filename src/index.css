@@ -155,6 +155,28 @@ h6 {
     font-size: 0.8rem;
 }
 
+/* text with header section */
+.text-with-header-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-3);
+    width: 35rem;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+#dark .text-with-header-div{
+    color: var(--color-white);
+    background-color: var(--color-primary-hover);
+    border: 3px solid var(--color-white);
+}
+#light .text-with-header-div{
+    color: var(--color-black);
+    background-color: var(--color-light-bg2);
+    border: 3px solid var(--color-black);
+}
 /* images */
 .img {
     display: block;
@@ -175,6 +197,7 @@ h6 {
     border: 2px solid transparent;
     border-radius: var(--border-radius-2);
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .btn:hover {
@@ -211,29 +234,58 @@ h6 {
     color: var(--color-white);
     font-weight: bold;
     background: var(--color-primary-hover);
-    /* dark mode */
     border: 3px solid var(--color-white);
+    box-shadow: 0px 2px 2px var(--color-white);
 }
 #light .btn.primary {
     color: var(--color-black);
     font-weight: bold;
     background: var(--color-light-bg2);
-    /* dark mode */
+    box-shadow: 0px 2px 2px var(--color-black);
     border: 3px solid var(--color-black);
 }
-/* set to regular white or color white; ?? */
+
 #dark .btn.primary:hover {
     background: var(--color-white);
     border-color: var(--color-primary-hover);
     color: var(--color-primary);
+    box-shadow: 0px 2px 2px var(--color-primary-hover);
 }
 #light .btn.primary:hover {
     background: var(--color-primary-hover);
     color: var(--color-light);
     border-color: var(--color-light);
+    box-shadow: 0px 2px 2px var(--color-dark);
+}
+
+/* navbar button (light/dark mode and color picker) */
+.nav__icon-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: auto;
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+    border-radius: var(--border-radius-1);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+#dark .nav__icon-btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+#light .nav__icon-btn {
+    background: var(--color-light-bg2);
+    color: var(--color-black);
 }
 
 
+#dark .nav__icon-btn:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-white);
+}
+#light .nav__icon-btn:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-black);
+}
 
 
 .btn.sm {
@@ -284,9 +336,9 @@ h6 {
         font-size: 1rem;
     }
 
-    .btn {
+    /* .btn {
         padding: 0.6rem 1.5rem;
-    }
+    } */
 
     section > p {
         width: var(--container-width-md);

@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import Logo from '../../assets/dog.jpg'
 import data from './data'
-import {FaMoon, FaSun} from 'react-icons/fa'
+import {FaMoon, FaSun, FaPaintBrush} from 'react-icons/fa'
 import { useState } from 'react'
 
 const Navbar = ({toggleTheme}) => {
@@ -62,9 +62,11 @@ const Navbar = ({toggleTheme}) => {
         </div>
 
         <div className="btn__holder">
-          <button id='theme__icon' onClick={() => {toggleTheme(); handleChangeActive()}}>{active ? (<FaSun/>) : (<FaMoon/>)}</button>
+          <button className='nav__icon-btn'><FaPaintBrush/></button>
+          <button className="nav__icon-btn" onClick={() => {toggleTheme(); handleChangeActive()}}>{active ? (<FaSun/>) : (<FaMoon/>)}</button>
           {/* <button id='theme__icon' onClick={toggleTheme}><FaSun/></button>
           <button id='theme__icon' onClick={handleChangeActive}>{active ? (<FaSun/>) : (<BsFillMoonFill/>)}</button> */}
+          {/* id='theme__icon' */}
         </div>
 
       </div>
