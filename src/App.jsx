@@ -28,8 +28,8 @@ const App = () => {
           <Portfolio />
           <About />
           <Contact />
-          <FloatingNav />
           <Footer />
+          <FloatingNav />
       </main>
     </ThemeContext.Provider>
   )

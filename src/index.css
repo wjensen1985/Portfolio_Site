@@ -82,7 +82,7 @@ section:nth-child(odd) {
 
 /* dark mode */
 section {
-    padding: 10rem 0;
+    padding: 5rem 0;
     transition: var(--transition);
     font-weight: bold;
 }
@@ -177,6 +177,7 @@ h6 {
     background-color: var(--color-light-bg2);
     border: 3px solid var(--color-black);
 }
+
 /* images */
 .img {
     display: block;
@@ -316,10 +317,14 @@ h6 {
     h1 {
         font-size: 2rem;
     }
+
+    .text-with-header-div {
+        width: var(--container-width-lg);
+    }
 }
 
 /* phones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     h1 {
         font-size: 2.4rem;
     }
@@ -339,6 +344,9 @@ h6 {
     /* .btn {
         padding: 0.6rem 1.5rem;
     } */
+    .text-with-header-div p {
+        width: 100%;
+    }
 
     section > p {
         width: var(--container-width-md);

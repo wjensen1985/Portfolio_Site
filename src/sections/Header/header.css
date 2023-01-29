@@ -153,9 +153,9 @@
         box-shadow: none
     } */
 
-    .header__bio {
+    /* .header__bio {
         width: var(--container-width-lg);
-    }
+    } */
 
     .header__socials {
         position: relative;
