@@ -167,6 +167,13 @@
         width: 100%;
         justify-content: flex-start;
     }
+
+    #light .header__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
+    #dark .header__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
     
 }
 
@@ -197,5 +204,11 @@
         gap: 1.2rem;
         width: 100%;
         justify-content: flex-start;
+    }
+    #light .header__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
+    #dark .header__socials a:hover  {
+        transform: translateY(-0.5rem);
     }
 }

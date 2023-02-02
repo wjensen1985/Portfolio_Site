@@ -89,6 +89,15 @@ nav {
     border: 2px solid var(--color-white);
 }
 
+#light .nav__menu a.activeNavItem{
+    background: var(--color-primary-hover);
+    border: 2px solid var(--color-black);
+}
+#dark .nav__menu a.activeNavItem{
+    background: var(--color-primary-hover);
+    border: 2px solid var(--color-white);
+}
+
 
 
 /* logo */

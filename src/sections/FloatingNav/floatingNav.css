@@ -1,0 +1,63 @@
+#floating_nav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #floating_nav {
+        display: block;
+        width: max-content;
+        padding: 0.7rem 1.7rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+        display: flex;
+        gap: 0.8rem;
+        border-radius: var(--border-radius-1);
+        backdrop-filter: blur(15px);
+    }
+    #light #floating_nav {
+        background: hsla(var(--primary-hue), var(--saturation-main), 41% , 0.25);
+        /* var(--primary-hue), var(--saturation-main), 41% 
+        var(--primary-hue), var(--saturation-secondary), var(--dark-lightness)*/
+    }
+    #dark #floating_nav {
+        background: hsla(var(--primary-hue), var(--saturation-main), var(--light-lightness),0.45);
+        /* var(--primary-hue), var(--saturation-secondary), var(--light-lightness) */
+    }
+
+    #floating_nav a {
+        font-size: 1.5rem;
+        display: flex;
+        padding: 0.7rem;
+        background: transparent;
+        border-radius: 50%;
+    }
+
+    #light #floating_nav a {
+        color: var(--color-black);
+    }
+    #dark #floating_nav a {
+        color: var(--color-white);
+    }
+
+    #light #floating_nav a:hover {
+        background: var(--color-primary);
+        color: var(--color-white);
+    }
+    #dark #floating_nav a:hover {
+        background: var(--color-white);
+        color: var(--color-primary);
+    }
+
+    #light #floating_nav a.active {
+        background: var(--color-primary);
+        color: var(--color-white);
+    }
+    #dark #floating_nav a.active {
+        background: var(--color-white);
+        color: var(--color-primary);
+    }
+
+}
