@@ -85,6 +85,7 @@ section {
     padding: 5rem 0;
     transition: var(--transition);
     font-weight: bold;
+    scroll-margin-top: 5rem;
 }
 #light section{
     background: var(--color-light-bg2);
@@ -115,7 +116,7 @@ section > p {
 
 /* a tags */
 a {
-    color: var(--color-white);
+    /* color: var(--color-white); */
     transition: var(--transition);
 }
 

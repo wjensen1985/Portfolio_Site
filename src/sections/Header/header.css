@@ -120,7 +120,6 @@
     /* light mode */
     background: var(--color-light-bg2);
     color: var(--color-black);
-    /* light mode */
     border: 3px solid var(--color-black);
     box-shadow: -2px 2px 2px var(--color-black);  
 }
@@ -140,6 +139,9 @@
     border-color: var(--color-light);
     box-shadow: -2px 2px 2px var(--color-black);
 }
+
+
+/* for mobile/smaller screen need more bottom padding cause menu will end up covering stuff otherwise (floating nav) */
 
 @media screen and (max-width: 1024px) {
     .header__class {

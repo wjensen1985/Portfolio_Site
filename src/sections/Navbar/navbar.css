@@ -78,6 +78,7 @@ nav {
 }
 #dark .nav__menu a{
     background: var(--color-primary);
+    color: var(--color-white);
 }
 
 #light .nav__menu a:hover{

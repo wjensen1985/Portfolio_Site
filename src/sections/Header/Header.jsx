@@ -5,7 +5,6 @@ import data from './data'
 import {IconContext} from 'react-icons';
 
 
-// sdf
 const Header = () => {
   return (
       <IconContext.Provider value={{size: '3rem'}}>

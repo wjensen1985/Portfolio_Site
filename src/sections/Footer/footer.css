@@ -1,3 +1,209 @@
-footer {
+#footer__section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+#dark #footer__section {
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+#light #footer__section {
     background: var(--color-light-bg2);
+    color: var(--color-black);
+}
+
+.links__container{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links__container a{
+    font-size: 1rem;
+}
+#dark .links__container a{
+    color: var(--color-white);
+}
+#light .links__container a{
+    color: var(--color-black);
+}
+
+.section__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__links h3 {
+    padding-bottom: 0.5rem;
+    /* text-decoration: underline; */
+    position: relative;
+    transition: var(--transition);
+}
+
+.section__links h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0.25rem;
+    left: 0;
+  }
+
+#light .section__links h3::after{
+    background-color: var(--color-black);
+}
+#dark .section__links h3::after{
+    background-color: var(--color-white);
+}
+
+
+.section__links a{
+    padding: 0.125rem;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    align-self: center;
+}
+
+/* Need dark and light mode version of this */
+.section__links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /* background-color: black; */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.section__links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#light .section__links a::after{
+    background-color: var(--color-black);
+}
+#dark .section__links a::after{
+    background-color: var(--color-white);
+}
+
+
+
+
+.footer__socials {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.footer__socials a {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--border-radius-3);
+    transition: var(--transition);
+}
+#dark .footer__socials a{
+    /* dark mode */
+    background: var(--color-primary-hover);
+    color: var(--color-white);
+    border: 3px solid var(--color-white);
+    box-shadow: 0px 2px 2px var(--color-white);    
+}
+#light .footer__socials a{
+    /* light mode */
+    background: var(--color-light-bg2);
+    color: var(--color-black);
+    /* light mode */
+    border: 3px solid var(--color-black);
+    box-shadow: 0px 2px 2px var(--color-black);  
+}
+
+
+#dark .footer__socials a:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-0.5rem);
+    border-color: var(--color-primary-hover);
+    box-shadow: 0px 2px 2px var(--color-primary-hover);
+}
+#light .footer__socials a:hover {
+    background: var(--color-primary-hover);
+    color: var(--color-light);
+    transform: translateY(-0.5rem);
+    border-color: var(--color-light);
+    box-shadow: 0px 2px 2px var(--color-black);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .links__container{
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+    /*     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly; */
+
+    .footer__socials {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        padding-top: 2rem;
+        gap: 1.2rem;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #light .footer__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
+    #dark .footer__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+
+    .footer__socials {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        padding-top: 0;
+        gap: 1.2rem;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 6rem;
+        margin-top: 0;
+    }
+    #light .footer__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
+    #dark .footer__socials a:hover  {
+        transform: translateY(-0.5rem);
+    }
 }
