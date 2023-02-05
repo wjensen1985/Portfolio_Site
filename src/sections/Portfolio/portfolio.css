@@ -1,3 +1,28 @@
 #portfolio {
     scroll-margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 3rem;
+}
+
+/* tablets */
+@media screen and (max-width: 1024px){
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* phones */
+@media screen and (max-width: 680px) {
+    .project-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -19,10 +19,10 @@ const FloatingNav = () => {
 
       sectionAll.forEach((current) => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 200;
+        const sectionTop = current.offsetTop - 400;
         const sectionId = current.getAttribute('id');
         
-        if (scrollPosition < (headerPosition - 201)){
+        if (scrollPosition < (headerPosition - 401)){
           // console.log('home');
           setActive('#');
         }

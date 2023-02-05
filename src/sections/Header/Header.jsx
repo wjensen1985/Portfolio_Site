@@ -21,8 +21,8 @@ const Header = () => {
           </div>
 
           <div className="header__cta">
-            <a href="#Portfolio" className='btn primary'>My Work</a>
-            <a href="#Contact" className='btn primary'>Contact Me</a>
+            <a href="#portfolio" className='btn primary'>My Work</a>
+            <a href="#contact" className='btn primary'>Contact Me</a>
           </div>
 
           <div className="header__socials">
