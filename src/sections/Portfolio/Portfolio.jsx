@@ -9,7 +9,7 @@ const Portfolio = () => {
       <h2>My Projects</h2>
       <div className="project-list">
         {
-          Project_data.map(item => <ProjectCard name={item.name} image={item.image} github_link={item.github_link} demo_link={item.demo_link} />)
+          Project_data.map(item => <ProjectCard key={item.name} name={item.name} image={item.image} github_link={item.github_link} demo_link={item.demo_link} />)
         }
       </div>
 

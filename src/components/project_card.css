@@ -10,6 +10,7 @@
     transition: var(--transition);
 
     min-width: 255px;
+    max-width: 300px;
 }
 
 #dark .project-card-container{
