@@ -1,7 +1,7 @@
 import testp1 from '../../assets/react_logo.png';
-import testp2 from '../../assets/man-working-from-home.png';
+// import testp2 from '../../assets/man-working-from-home.png';
 import testp3 from '../../assets/dog.jpg';
-import testp4 from '../../assets/icon.png';
+// import testp4 from '../../assets/icon.png';
 
 const Project_data = [
     {

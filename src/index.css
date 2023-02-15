@@ -104,6 +104,7 @@ section {
 
 section > h2 {
     text-align: center;
+    transition: var(--transition);
 }
 
 section > p {
@@ -168,6 +169,7 @@ h6 {
     text-align: center;
     gap: 0.5rem;
     padding: 0.5rem;
+    transition: var(--transition);
 }
 #dark .text-with-header-div{
     color: var(--color-white);

@@ -5,7 +5,7 @@ const ProjectCard= ({name, image, github_link, demo_link}) => {
   return (
     <div className='project-card-container'>
       <div className="img-container">
-        <a href="#"><img src={image} alt={`${name} project`} /></a>
+        <a href="/#"><img src={image} alt={`${name} project`} /></a>
       </div>
       <h3>{name}</h3>
       <div className="links_container">

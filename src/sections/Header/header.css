@@ -29,6 +29,7 @@
     padding: 3rem;
     gap: 1.2rem;
     border-radius: var(--border-radius-1);
+    transition: var(--transition);
 }
 #dark .header__container {
     background: var(--color-primary-nav-item-bg);
@@ -45,6 +46,7 @@
     height: 27rem;
     border-radius: 9rem 9rem 2rem 2rem;
     overflow: hidden;
+    transition: var(--transition);
 }
 #dark .header__profile{
     border: 3px solid var(--color-white);
@@ -70,6 +72,7 @@
 .header__cta a {
     min-width: 145px;
     text-align: center;
+    transition: var(--transition);
     /* align-items: center; */
 }
 

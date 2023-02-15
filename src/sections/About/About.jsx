@@ -7,7 +7,7 @@ const About = () => {
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>
-    <a className="btn primary" target='_blank' rel="noopener noreferrer" href="#">Download Resume</a>
+    <a className="btn primary" target='_blank' rel="noopener noreferrer" href="/#">Download Resume</a>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium tenetur inventore ratione, modi, et quae sed totam illum quidem molestias veniam aperiam corporis expedita beatae natus harum, nulla doloremque!</p>

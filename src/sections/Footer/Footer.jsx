@@ -11,17 +11,17 @@ const Footer = () => {
       <div className="links__container">
         <ul className='section__links'>
           <h3>Site Navigation</h3>
-          <a href='#'>Home</a>
+          <a href='/#'>Home</a>
           <a href='#portfolio'>Portfolio</a>
           <a href='#about'>About</a>
           <a href='#contact'>Contact</a>
         </ul>
         <ul className='section__links'>
           <h3>My Projects</h3>
-          <a href='#'>Project 1</a>
-          <a href='#'>Project 2</a>
-          <a href='#'>Project 3</a>
-          <a href='#'>Project 4</a>
+          <a href='/#'>Project 1</a>
+          <a href='/#'>Project 2</a>
+          <a href='/#'>Project 3</a>
+          <a href='/#'>Project 4</a>
         </ul>
         {/* <ul className='section__links'>
           <a href='#'>home</a>
