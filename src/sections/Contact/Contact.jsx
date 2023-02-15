@@ -4,14 +4,17 @@ import './contact.css'
 const Contact = () => {
   return (
     <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="">
-        <input type="text" name="name" placeholder="Your Name" required/>
-        <input type="email" name="email" placeholder="Email" required/>
-        <textarea name="submit" rows="7" defaultValue={""}></textarea>
-        <button className='btn primary'>Send Message</button>
-      </form>
-      
+      <div id="contact-wrapper" >
+        <h2>Contact Me</h2>
+        <div id="contact-form">
+          <form action="">
+            <input type="text" name="name" placeholder="Your Name" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+            <textarea id="text-input" name="message" rows="7" placeholder="Your Message Here" required></textarea>
+            <button type="submit" className='btn primary'>Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
   )
 }
