@@ -4,8 +4,8 @@ import HeaderImage from '../../assets/panda_v.jpg'
 import data from './data'
 import {IconContext} from 'react-icons';
 
-
 const Header = () => {
+
   return (
       <IconContext.Provider value={{size: '3rem'}}>
       <header id='header' className='header__class'>

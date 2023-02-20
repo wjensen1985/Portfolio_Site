@@ -4,9 +4,11 @@ import Logo from '../../assets/dog.jpg'
 import data from './data'
 import {FaMoon, FaSun, FaPaintBrush} from 'react-icons/fa'
 import { useState } from 'react'
+import ColorPicker from './../../components/ColorPicker';
 
 const Navbar = ({toggleTheme}) => {
-    // changing icon
+  
+  // changing icon
     const [active, setActive] = useState(false);
 
     const handleChangeActive = () => {
@@ -15,6 +17,8 @@ const Navbar = ({toggleTheme}) => {
       });
     };
 
+  // color picker visibility
+  const [activeColor, setActiveColor] = useState(false);
 
     // navbar scroll logic
   const [navbar, setNavbar] = useState(false);
@@ -62,11 +66,12 @@ const Navbar = ({toggleTheme}) => {
         </div>
 
         <div className="btn__holder">
-          <button className='nav__icon-btn'><FaPaintBrush/></button>
           <button className="nav__icon-btn" onClick={() => {toggleTheme(); handleChangeActive()}}>{active ? (<FaSun/>) : (<FaMoon/>)}</button>
-          {/* <button id='theme__icon' onClick={toggleTheme}><FaSun/></button>
-          <button id='theme__icon' onClick={handleChangeActive}>{active ? (<FaSun/>) : (<BsFillMoonFill/>)}</button> */}
-          {/* id='theme__icon' */}
+          <button className='nav__icon-btn' onClick={() => setActiveColor(!activeColor)}><FaPaintBrush/></button>
+
+          <div id='color-picker-display' style={activeColor ? {} : {display: "none"}}>
+              <ColorPicker/>
+          </div>
         </div>
 
       </div>

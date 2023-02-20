@@ -164,3 +164,10 @@ nav {
         display: none;
     }
 }
+
+
+#color-picker-display {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+}
