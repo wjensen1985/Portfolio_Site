@@ -16,7 +16,8 @@
     justify-content: center;
     align-items: center;
     border-radius: var(--border-radius-3);
-    width: var(--container-width-lg);
+    /* width: var(--container-width-lg); */
+    width: 50%;
     text-align: center;
     gap: 1rem;
     padding: 2rem;
@@ -34,4 +35,16 @@
     color: var(--color-black);
     background-color: var(--color-white);
     border: 3px solid var(--color-black);
+}
+
+@media screen and (max-width: 1024px){
+    .about-container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about-container{
+        width: 76%;
+    }
 }
