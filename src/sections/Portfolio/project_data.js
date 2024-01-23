@@ -5,41 +5,41 @@ import testp3 from '../../assets/dog.jpg';
 
 const Project_data = [
     {
-        name: "project 1",
+        name: "Youtube Clone",
         image: testp1,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
+        github_link: 'https://github.com/wjensen1985/youtube_clone',
+        demo_link: 'https://yt-web-client-bpmf4mrjdq-uc.a.run.app/'
     },
     {
-        name: "project 2",
+        name: "Pygame Boggle",
+        image: testp3,
+        github_link: 'https://github.com/wjensen1985/pygame_boggle',
+        demo_link: 'https://github.com/wjensen1985/pygame_boggle'
+    },
+    {
+        name: "This Website",
+        image: testp1,
+        github_link: 'https://github.com/wjensen1985/Portfolio_Site',
+        demo_link: 'https://github.com/wjensen1985/Portfolio_Site'
+    },
+    {
+        name: "Coming Soon",
         image: testp3,
         github_link: 'https://github.com',
         demo_link: 'https://linkedin.com'
     },
-    {
-        name: "project 3",
-        image: testp1,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
-    },
-    {
-        name: "project 4",
-        image: testp3,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
-    },
-    {
-        name: "project 5",
-        image: testp1,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
-    },
-    {
-        name: "project 6",
-        image: testp3,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
-    },
+    // {
+    //     name: "Coming Less Soon",
+    //     image: testp1,
+    //     github_link: 'https://github.com',
+    //     demo_link: 'https://linkedin.com'
+    // },
+    // {
+    //     name: "Coming Not So Soon",
+    //     image: testp3,
+    //     github_link: 'https://github.com',
+    //     demo_link: 'https://linkedin.com'
+    // },
 ]
 
 export default Project_data

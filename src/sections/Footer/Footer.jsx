@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import data from '../Header/data'
 import { IconContext } from 'react-icons'
+import Project_data from '../Portfolio/project_data'
 
 const Footer = () => {
   return (
@@ -18,17 +19,8 @@ const Footer = () => {
         </ul>
         <ul className='section__links'>
           <h3>My Projects</h3>
-          <a href='/#'>Project 1</a>
-          <a href='/#'>Project 2</a>
-          <a href='/#'>Project 3</a>
-          <a href='/#'>Project 4</a>
+          {Project_data.map((item, index) => <a href = {item.github_link} target='_blank' rel="noopener noreferrer" key={index}> {item.name}</a> )}
         </ul>
-        {/* <ul className='section__links'>
-          <a href='#'>home</a>
-          <a href='#'>portfolio</a>
-          <a href='#'>about</a>
-          <a href='#'>contact</a>
-        </ul> */}
       </div>
 
       <div className="footer__socials">
