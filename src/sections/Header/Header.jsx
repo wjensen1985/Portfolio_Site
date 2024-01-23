@@ -17,11 +17,11 @@ const Header = () => {
 
           <div className="header__bio text-with-header-div">
             <h3>William Jensen</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur itaque magnam optio, aliquam numquam molestiae repellendus nam nulla? Consequuntur, sit fugiat. Architecto neque nulla id sapiente nihil, aspernatur adipisci provident.</p>
+            <h4>I like to build things</h4>
           </div>
 
           <div className="header__cta">
-            <a href="#portfolio" className='btn primary'>My Work</a>
+            <a href="#portfolio" className='btn primary'>My Projects</a>
             <a href="#contact" className='btn primary'>Contact Me</a>
           </div>
 

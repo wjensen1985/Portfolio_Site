@@ -158,6 +158,10 @@ h6 {
     font-size: 0.8rem;
 }
 
+p {
+    font-size: 0.95rem;
+}
+
 /* text with header section */
 .text-with-header-div {
     display: flex;
@@ -195,6 +199,7 @@ h6 {
     width: fit-content;
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 1rem;
     /* background: var(--color-light);
     color: var(--color-black); */
@@ -329,6 +334,14 @@ h6 {
 
 /* phones */
 @media screen and (max-width: 680px) {
+    .container {
+        width: 75%;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+
     h1 {
         font-size: 2.4rem;
     }
@@ -345,9 +358,6 @@ h6 {
         font-size: 1rem;
     }
 
-    /* .btn {
-        padding: 0.6rem 1.5rem;
-    } */
     .text-with-header-div p {
         width: 100%;
     }
