@@ -20,9 +20,9 @@ const ColorPicker = () => {
         <div id='color-picker-wrapper'>
             <input id='color-picker' type='range' min={0} max={360} step={1} value={data} onChange={(e) => setData(e.target.value)}/>
             
-            <h4 className="">{data}</h4>
+            <h4 id='hue-number-disp'>{data}</h4>
 
-            <button onClick={() => setColor(data)} className='btn primary'>Change Color</button>
+            <button id='change-btn' onClick={() => setColor(data)} className='btn primary'>Change Color</button>
         </div>
 
   )
