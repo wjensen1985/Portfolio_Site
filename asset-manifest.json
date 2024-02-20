@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Site/static/css/main.ab35c86d.css",
+    "main.js": "/Portfolio_Site/static/js/main.c79a2ec6.js",
+    "static/media/dog.jpg": "/Portfolio_Site/static/media/dog.66ed8496d475f7946a71.jpg",
+    "static/media/panda_v.jpg": "/Portfolio_Site/static/media/panda_v.fbf823b283c8c5b2e606.jpg",
+    "static/media/Jensen_Resume.pdf": "/Portfolio_Site/static/media/Jensen_Resume.d27e6bdecee93ef65244.pdf",
+    "static/media/boggle2.jpg": "/Portfolio_Site/static/media/boggle2.8125884d788167bdd8f8.jpg",
+    "index.html": "/Portfolio_Site/index.html",
+    "main.ab35c86d.css.map": "/Portfolio_Site/static/css/main.ab35c86d.css.map",
+    "main.c79a2ec6.js.map": "/Portfolio_Site/static/js/main.c79a2ec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab35c86d.css",
+    "static/js/main.c79a2ec6.js"
+  ]
+}
