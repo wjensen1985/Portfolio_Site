@@ -1,7 +1,7 @@
-import testp1 from '../../assets/react_logo.png';
-// import testp2 from '../../assets/man-working-from-home.png';
-import testp3 from '../../assets/dog.jpg';
-// import testp4 from '../../assets/icon.png';
+import testp1 from '../../assets/youtube_logo.jpg';
+import testp2 from '../../assets/boggle2.jpg';
+import testp3 from '../../assets/react_logo.png';
+import testp4 from '../../assets/dog.jpg';
 
 const Project_data = [
     {
@@ -12,21 +12,21 @@ const Project_data = [
     },
     {
         name: "Pygame Boggle",
-        image: testp3,
+        image: testp2,
         github_link: 'https://github.com/wjensen1985/pygame_boggle',
         demo_link: 'https://github.com/wjensen1985/pygame_boggle'
     },
     {
         name: "This Website",
-        image: testp1,
+        image: testp3,
         github_link: 'https://github.com/wjensen1985/Portfolio_Site',
         demo_link: 'https://github.com/wjensen1985/Portfolio_Site'
     },
     {
         name: "Coming Soon",
-        image: testp3,
-        github_link: 'https://github.com',
-        demo_link: 'https://linkedin.com'
+        image: testp4,
+        github_link: 'https://github.com/wjensen1985',
+        demo_link: 'https://github.com/wjensen1985'
     },
     // {
     //     name: "Coming Less Soon",
